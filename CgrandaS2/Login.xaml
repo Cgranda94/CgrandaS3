@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CgrandaS2.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Sistema de registro de notas " FontSize="24" 
+                
+                HorizontalOptions="CenterAndExpand" />
+            <Image Source="https://aiesec.org.ec/wp-content/uploads/2018/10/uisrael.png"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition>                        
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario"  FontSize="18" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Contraseña" FontSize="18" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtContrasena" Placeholder="Ingrese su contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1"></Entry>
+            
+            </Grid>
+            <Button x:Name="btnIniciar" Text="Iniciar Sesion" Clicked="btnIniciar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
